@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>START</title>
+<style>
+body {
+        background-image: url("background/background.png");
+	 }
+</style>
+</head>
+<body>
+<embed  src="sound/music2.mp3"  width="0" height="0"  autostart="true"  loop="true"/>
+<div align ='center'>
+<img src="imag/Letter-M-blue-icon.png" width="112" />
+<img src="imag/Letter-E-blue-icon.png" width="112" />
+<img src="imag/Letter-M-blue-icon.png" width="112" />
+<img src="imag/Letter-O-blue-icon.png" width="112" />
+<img src="imag/Letter-R-blue-icon.png" width="112" />
+<img src="imag/Letter-Y-blue-icon.png" width="112" />
+</div>
+<div align ='center'>
+<img src="imag/Letter-G-blue-icon.png" width="112" />
+<img src="imag/Letter-A-blue-icon.png" width="112" />
+<img src="imag/Letter-M-blue-icon.png" width="112" />
+<img src="imag/Letter-E-blue-icon.png" width="112" />
+</div>	
+<br>
+ <div  align="center"> 
+<FORM NAME="joe">
+
+<INPUT TYPE="HIDDEN" NAME="burns">
+</FORM>
+<script>
+
+var locate = window.location
+document.joe.burns.value = locate
+
+var text = document.joe.burns.value
+var result= delineate(text)
+var hi="Welcome"
+var hi1=hi.fontsize(7);
+
+var result1 = result.fontsize(7);
+
+function delineate(str)
+{
+theleft = str.indexOf("=") + 1;
+theright = str.lastIndexOf("&");
+return(str.substring(theleft, theright));
+}
+document.write(hi1+" &nbsp &nbsp &nbsp &nbsp "+result1);
+
+</SCRIPT>
+</div>
+<!-- <br> -->
+<div align="center">
+<h1><font size="7" color="#3b307a" style="font-family:Jokerman;">CHOOSE THE CHARACTER </font></h1>
+<a href="level_anim.html"><img src="animation/ch1.png" width="100" height="120" /></a>
+<a href="level_fish.html"><img src="fish/ch12.png" width="150" height="100" /></a>
+<a href="level_car.html"><img src="car/car_bg.png" width="150" height="100" /></a>
+<br>
+</div>
+</body>
+</html>
